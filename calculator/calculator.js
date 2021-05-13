@@ -1,3 +1,4 @@
+
           function insert(num) {
              document.form.textview.value = document.form.textview.value + num;
           }
@@ -11,6 +12,7 @@
           function equal() {
              var eqv = document.form.textview.value;
              if(eqv) {
+                document.history.textarea.value = document.history.textarea.value+"\n" + document.form.textview.value+'='+eval(eqv);
                 document.form.textview.value = eval(eqv);
              }
           }
