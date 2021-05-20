@@ -12,7 +12,7 @@
           function equal() {
              var eqv = document.form.textview.value;
              if(eqv) {
-                document.history.textarea.value = document.history.textarea.value+"\n" + document.form.textview.value+'='+eval(eqv);
+                document.history.textarea.value = document.history.textarea.value + document.form.textview.value+'='+eval(eqv)+"\n";
                 document.form.textview.value = eval(eqv);
              }
           }
